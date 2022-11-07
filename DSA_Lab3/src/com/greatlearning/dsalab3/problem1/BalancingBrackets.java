@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class BalancingBrackets {
 	
-	public static boolean isStringBalanced(String bracketExpression) {
+	public boolean isStringBalanced(String bracketExpression) {
 		
 		//declare stack to store brackets character
 		Stack<Character> stack = new Stack<>();
@@ -40,13 +40,6 @@ public class BalancingBrackets {
 		return (stack.isEmpty());
 	}
 
-	public static void main(String[] s) {
-		String exp = "([{}])";
-		boolean status = isStringBalanced(exp);
-		if (status)
-			System.out.println("The entered String has Balanced Brackets");
-		else
-			System.out.println("The entered Strings do not contain Balanced Brackets");
-	}
+	
 
 }

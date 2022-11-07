@@ -33,6 +33,7 @@ public class FindPairNodesOfSumInBST {
 		return root;
 	}
 	
+	//method to find the nodes pair for a given sum
 	public boolean findPairforSum(Node root, int sum, HashSet<Integer> set)
 	{
 		if(root==null)
@@ -58,21 +59,6 @@ public class FindPairNodesOfSumInBST {
 		if(!findPairforSum(root, sum, set))
 			System.out.println("Pair nodes do not exists ");
 	}
-		public static void main(String[] s)
-		{
-		Node root=null;
-		FindPairNodesOfSumInBST pairOfSum= new FindPairNodesOfSumInBST();
-		root=pairOfSum.insert(root, 10);
-		root=pairOfSum.insert(root, 20);
-		root=pairOfSum.insert(root, 30);
-		root=pairOfSum.insert(root, 40);
-		root=pairOfSum.insert(root, 50);
-		root=pairOfSum.insert(root, 60);
-		root=pairOfSum.insert(root, 70);
-		int givenSum=110;
-		System.out.println("Sum: "+givenSum);
-		pairOfSum.findPairOfGivenSum(root, givenSum);
 		
-		}
 	
 }
